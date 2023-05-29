@@ -23,7 +23,7 @@ headers = {
 
 with st.sidebar:
     st.title("GPT-3 PDF Chatbot")
-    st.markdown("This is a simple GPT-3 chatbot that can answer questions from a given PDF file.")
+    st.markdown("This is a simple GPT-3 chatbot that can answer questions from a given PDF file. \n1] Upload your PDF. \n2] Ask Questions about your PDF and hit enter. \n3] You will get the answers below.")
     add_vertical_space(5)
     # st.markdown(f"Made by <https://github.com/NirmalKAhirwar>")
     # st.link("Streamlit website", "https://github.com/NirmalKAhirwar")
