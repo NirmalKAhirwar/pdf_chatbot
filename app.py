@@ -15,7 +15,10 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 
 
-
+headers = {
+    "openai_api_key" : st.secrets["OPENAI_API_KEY"],
+    "content-type": "application/json"
+}
 
 
 with st.sidebar:
