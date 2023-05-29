@@ -16,7 +16,7 @@ from langchain.callbacks import get_openai_callback
 
 
 headers = {
-    "openai_api_key" : st.secrets["OPENAI_API_KEY"],
+    "OPENAI_API_KEY" : st.secrets["OPENAI_API_KEY"],
     "content-type": "application/json"
 }
 
