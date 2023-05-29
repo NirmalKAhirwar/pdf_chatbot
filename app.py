@@ -77,7 +77,7 @@ def main():
         if query:
             docs = VectorStore.similarity_search(query, k=3)
             # different model to try "gpt-3.5-turbo"
-            llm = OpenAI(model_name = "gpt-3.5-turbo",temperature = 0.2)
+            llm = OpenAI(openai_api_key = headers["OPENAI_API_KEY"] , model_name = "gpt-3.5-turbo",temperature = 0.2)
             chain = load_qa_chain(llm, chain_type="stuff")
             with get_openai_callback() as cb:
                 response = chain.run(input_documents=docs, question=query)
